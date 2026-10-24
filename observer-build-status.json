@@ -1,7 +1,8 @@
 {
-  "downloadUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/observador-web-v0.1.0/Observador-Web-ERP-Recicle-0.1.0.zip",
-  "sourceCommit": "29264b1c16177e97f0c7bc9fc1a3dc89d624f43d",
-  "updatedAtUtc": "2026-10-24T15:48:38.9708344Z",
-  "status": "success",
-  "runId": "40108587222"
+  "updatedAtUtc": "2026-10-24T16:48:12.6430280Z",
+  "version": "0.2.0",
+  "downloadUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/observador-web-v0.2.0/Observador-Web-ERP-Recicle-0.2.0.zip",
+  "sourceCommit": "a1c65e0a8a94a394de4cb3af42521bd9fc0f2ceb",
+  "status": "failure",
+  "runId": "40113185546"
 }
