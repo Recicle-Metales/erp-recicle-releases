@@ -1,6 +1,6 @@
 {
-  "version": "0.19.7",
-  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/v0.19.7/ERP-Recicle-Setup-0.19.7.exe",
-  "sha256": "31633cd770627971dfda2189a1f9ace8a42dfedf373f9a2ccf2b2e313d7f5729",
-  "publishedAt": "2026-11-06T16:30:18.6948740Z"
+  "version": "0.20.0",
+  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/bascula-v0.20.0-piloto/ERP-Recicle-Setup-0.20.0.exe",
+  "sha256": "5be2f7a42b9f62d53449a8af0d80254dca34e45e948fe25fa8f74fd2670f970d",
+  "publishedAt": "2026-11-06T20:21:36Z"
 }
