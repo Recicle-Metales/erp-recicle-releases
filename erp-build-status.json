@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-10T21:26:38.1160246Z",
-  "result": "failure",
-  "commit": "e102120e0c8ce3c16944fa0122402c56c9da26f3"
+  "result": "cancelled",
+  "checkedAt": "2026-11-10T21:32:55.2176677Z",
+  "commit": "634323e1e306a05bb274035316b720bdfca66ab4"
 }
