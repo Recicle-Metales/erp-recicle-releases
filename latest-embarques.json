@@ -1,6 +1,6 @@
 {
-  "publishedAt": "2026-11-13T21:58:03.8934865Z",
-  "version": "0.1.18",
-  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/embarques-v0.1.18/ERP-Recicle-Embarques-Setup-0.1.18.exe",
-  "sha256": "499c83e077133a60dc996dc4f31b7fdfa3774f7a869128b5392eb1d55723ae56"
+  "publishedAt": "2026-11-14T14:40:21.5192489Z",
+  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/embarques-v0.1.19/ERP-Recicle-Embarques-Setup-0.1.19.exe",
+  "sha256": "3f83b4e6b0b3674e13206fd884db58ab3a21ad30aaf60025cd4487d7fb5e02f2",
+  "version": "0.1.19"
 }
