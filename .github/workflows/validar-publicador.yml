@@ -33,4 +33,4 @@ jobs:
       - name: Validar workflows
         run: |
           go install github.com/rhysd/actionlint/cmd/actionlint@v1.7.12
-          "$(go env GOPATH)/bin/actionlint" -ignore 'property "queue" is not defined' .github/workflows/*.yml
+          "$(go env GOPATH)/bin/actionlint" -ignore 'unexpected key "queue" for "concurrency" section' .github/workflows/*.yml
