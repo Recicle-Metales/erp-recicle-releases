@@ -1,0 +1,9 @@
+{
+  "request_id": "45503561490-1-embarques",
+  "edition": "Embarques",
+  "version": "0.1.22",
+  "bundle_sha256": "30f6e0b0da574c586f25e47568f6bd098324cbc62c391471cd1e5abdb800f83d",
+  "verify_only": true,
+  "status": "success",
+  "run_url": "https://github.com/Recicle-Metales/erp-recicle-releases/actions/runs/45505034301"
+}
