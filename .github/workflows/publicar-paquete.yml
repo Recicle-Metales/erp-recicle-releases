@@ -1,0 +1,51 @@
+name: Publicar paquete verificado
+run-name: Publicar ${{ github.event.client_payload.edition }} ${{ github.event.client_payload.version }} · ${{ github.event.client_payload.request_id }}
+
+on:
+  repository_dispatch:
+    types: [release-bundle-ready]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-publisher
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Recuperar paquete y verificar SHA-256
+        id: bundle
+        timeout-minutes: 5
+        run: python scripts/receive-release.py receive
+      - name: Probar subida real sin publicar una versión
+        if: steps.bundle.outputs.verify_only == 'true'
+        timeout-minutes: 6
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/receive-release.py probe
+      - name: Publicar instalador y verificar canal
+        if: steps.bundle.outputs.verify_only == 'false'
+        timeout-minutes: 10
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EDITION: ${{ steps.bundle.outputs.edition }}
+          VERSION: ${{ steps.bundle.outputs.version }}
+        run: ./scripts/publish-windows.ps1 -Edition $env:EDITION -Version $env:VERSION -UploadTimeoutSec 300
+      - name: Confirmar resultado al ejecutor de compilación
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          JOB_STATUS: ${{ job.status }}
+        run: python scripts/receive-release.py status
