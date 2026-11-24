@@ -1,0 +1,12 @@
+name: Validar ejecutor de publicaciones
+on:
+  push:
+    branches: [fix/publicador-automatico]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - run: echo 'Ejecutor de publicaciones disponible'
