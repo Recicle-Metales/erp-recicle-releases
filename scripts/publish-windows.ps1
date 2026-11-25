@@ -50,7 +50,9 @@ catch {
 if (-not $release) {
     if ($ExistingInstaller) { throw "No existe el release $tag." }
     $name = if ($isEmbarques) { "ERP Recicle Embarques $Version" } else { "ERP Recicle $Version" }
-    $notes = if ($isEmbarques) {
+    $notes = if (($isEmbarques -and $Version -eq [version]'0.1.23') -or (-not $isEmbarques -and $Version -eq [version]'0.20.14')) {
+        'Sincroniza lotes, pesadas y movimientos anteriores y nuevos con el lector web de trazabilidad. No modifica existencias. Requiere abrir el ERP con su conexión de tránsito configurada.'
+    } elseif ($isEmbarques) {
         if ($Version -eq [version]'0.1.19') { 'Sincroniza el catálogo de materiales administrado por Báscula y envía sus identificadores a Inventarios.' } elseif ($Version -eq [version]'0.1.17') { 'Envía entradas y salidas confirmadas a Inventarios PT con cola local y reintentos.' } else { 'Asigna varias pesadas del mismo lote a un renglón SGC y conserva el saldo para futuras cargas.' }
     } elseif ($Version -eq [version]'0.20.11') {
         'Publica el catálogo maestro de materiales para Embarques e Inventarios.'
