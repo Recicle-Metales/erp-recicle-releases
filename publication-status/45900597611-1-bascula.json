@@ -1,0 +1,9 @@
+{
+  "request_id": "45900597611-1-bascula",
+  "edition": "Bascula",
+  "version": "0.20.15",
+  "bundle_sha256": "07388d84c85e39b5b5268ad73d805a95b0f2177718229b8f50c6833c1bd9f52d",
+  "verify_only": false,
+  "status": "success",
+  "run_url": "https://github.com/Recicle-Metales/erp-recicle-releases/actions/runs/45902605245"
+}
