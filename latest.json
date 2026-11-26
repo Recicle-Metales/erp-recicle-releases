@@ -1,6 +1,6 @@
 {
-  "version": "0.20.14",
-  "publishedAt": "2026-11-25T21:09:44Z",
-  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/v0.20.14/ERP-Recicle-Setup-0.20.14.exe",
-  "sha256": "ddfd56589c65b45ee8021b18375a9dd01737a4b80a46ff1038a6b9fe656438d4"
+  "installerUrl": "https://github.com/Recicle-Metales/erp-recicle-releases/releases/download/v0.20.15/ERP-Recicle-Setup-0.20.15.exe",
+  "publishedAt": "2026-11-26T22:07:00.2991958Z",
+  "version": "0.20.15",
+  "sha256": "5456a33f58290b5ee5b6a62df515c3b02fe5e16f749c214b1021b999154155e1"
 }
